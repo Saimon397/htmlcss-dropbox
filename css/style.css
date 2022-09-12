@@ -4,12 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
     min-width: 1320px;
 }
 
@@ -24,6 +23,8 @@ a {
 
 .w-30 {
     width: 30%;
+    flex-flow: column wrap;
+    position: relative;
 }
 
 .w-70 {
@@ -60,7 +61,7 @@ header nav {
     background-color: white;
     border-bottom: 0.5px solid grey;
     position: fixed;
-    padding:0 10px;
+    padding: 0 15px;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -72,7 +73,7 @@ header nav .d-flex {
 }
 
 header nav img {
-    height: 27%;
+    height: 50%;
     padding-right: 15px;
 }
 
@@ -124,20 +125,16 @@ h1 {
     padding-top: 50px;
 }
 
-.w-30 {
-    flex-flow: column wrap;
-    position: relative;
-}
-
 .w-30 p {
     line-height: 25px;
-
+    font-size: 16px;
 }
 
 .w-30 a {
     position: relative;
     top: 50px;
     left: 0;
+    font-size: 15px;
 }
 
 .w-30 i {
@@ -147,10 +144,16 @@ h1 {
 }
 
 /*Main*/
+/*checkbox*/
 
 #main-plans {
     font-size: 40px;
     padding-bottom: 25px;
+}
+
+.small-container h2 {
+    margin-bottom: 60px;
+    font-size: 37px;
 }
 
 .radio-div {
@@ -158,22 +161,157 @@ h1 {
     padding-right: 30px;
 }
 
-.radio-div span {
-    line-height: 50px;
+.radio-div p {
+    line-height: 22px;
+    font-size: 15px;
 }
 
-.circle {
-    display: inline-block;
-    background-color: white;
-    width: 25px;
+.container-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 25px;
+    width: 25px;
+    background-color: #eee;
     border-radius: 50%;
-    vertical-align: middle;
 }
 
-#checked {
-    border: 6px solid rgb(0, 97, 255);
+.container-radio:hover input~.checkmark {
+    background-color: #ccc;
 }
-#non-checked {
-    border: 3px solid rgb(203, 203, 206);
+
+.container-radio input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-radio input:checked~.checkmark:after {
+    display: block;
+}
+
+.container-radio .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: white;
+}
+
+/*Plan_section*/
+
+.table {
+    width: calc((100% - 80px) / 3);
+    border: 1px solid rgb(214, 214, 217);
+    min-height: 1000px;
+}
+
+.fa-user {
+    font-size: 19px
+}
+
+.table p {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.user-type {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(214, 214, 217);
+}
+
+.plans-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    line-height: 2.0;
+    font-size: medium;
+}
+
+.plans-container h4 {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.price {
+    display: inline-block;
+    font-weight: 900;
+    padding: 10px 0;
+}
+
+.month {
+    color: rgb(106, 103, 108);
+}
+
+.info {
+    padding: 35px 0;
+}
+
+.info i {
+    margin-right: 5px;
+}
+
+.info-2 {
+    padding-bottom: 18px;
+}
+
+.btn-prova {
+    background-color: rgb(0, 97, 255);
+    color: white;
+    padding: 15px;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 400px;
+}
+
+.slash-hr {
+    display: inline-block;
+    padding: 20px 5px 30px 0;
+    border-bottom: 1px solid rgb(106, 103, 108);
+}
+
+.col-plan h4 {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.fa-check {
+    color: rgb(0, 97, 255);
+    padding-right: 5px;
+}
+
+.info-3 {
+    padding-top: 10px;
+}
+
+.table-center {
+    margin: 0 40px;
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,7 +37,7 @@
     </div>
 
     </nav>
-<!--Start Jumbo-->
+    <!--Start_Jumbo-->
     <section id="jumbotron">
         <div class="container">
             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
@@ -60,21 +60,165 @@
     </section>
 
     </header>
-<!--Start main-->
+    <!--Start_main-->
     <main>
+        <!--Checkbox-->
         <section id="main-plans" class="small-container">
             <h2>Trova il piano business che fa per te</h2>
             <div class="d-flex">
                 <div class="radio-div">
-                    <div class="circle" id="checked">
-                    </div>
-                    <span>Fatturazione mensile</span> 
+                    <label class="container-radio">
+                        <p>Fatturazione mensile</p>
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="radio-div">
-                    <div class="circle" id="non-checked"></div>
-                    <span>Fatturazione annuale</span>
+                    <label class="container-radio">
+                        <p>Fatturazione annuale</p>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
+            <!--Plans_section-->
+            <div id="plans_tables" class="d-flex">
+                <div class="table">
+                    <div class="user-type"><i class="fa-solid fa-user"></i>
+                        <p>Singolo</p>
+                    </div>
+                    <div class="plans-container">
+                        <h3>Professional</h3>
+                        <span class="price">&euro; 12.00</span>
+                        <br>
+                        <span class="month">/mese</span>
+                        <div class="info">
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-user"></i></div>
+                                <span>1 utente</span>
+                            </div>
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-folder"></i></div>
+                                <span>5 TB di spazio di archiviazione sicuro</span>
+                            </div>
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-share-nodes"></i></div>
+                                <span>Funzioni di produttivit&aacute; premium e condivisione file semplice e
+                                    sicura</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-prova">Prova gratis per 30 giorni</a>
+                        <span class="slash-hr">oppure </span><a href="#">acquista ora</a>
+                        <div>
+                            <h4>Punti salienti del piano</h4>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                            </div>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table table-center">
+                    <div class="user-type"><i class="fa-solid fa-user"></i>
+                        <p>Team</p>
+                    </div>
+                    <div class="plans-container">
+                        <h3>Advanced</h3>
+                        <span class="price">&euro; 18.00</span>
+                        <br>
+                        <span class="month">/utente/mese</span>
+                        <div class="info">
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-user"></i></div>
+                                <span>3 o pi&ugrave; utenti</span>
+                            </div>
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-folder"></i></div>
+                                <span>Tutto lo spazio di cui ha bisogno il tuo team</span>
+                            </div>
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-share-nodes"></i></div>
+                                <span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo
+                                    team</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-prova">Prova gratis per 30 giorni</a>
+                        <span class="slash-hr">oppure </span><a href="#">acquista ora</a>
+                        <div>
+                            <h4>Punti salienti del piano</h4>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Nessun limite di spazio per i tuoi file</span>
+                            </div>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Cartelle offline su dispositivi mobili</span>
+                            </div>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
+                            </div>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Possibilit&agrave; di inserire nuovi membri del Team</span>
+                            </div>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Gestione dei permessi in base ai ruoli</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="user-type"><i class="fa-solid fa-user"></i>
+                        <p>Azienda</p>
+                    </div>
+                    <div class="plans-container">
+                        <h3>Enterprise</h3>
+                        <span class="price">Contattaci</span>
+                        <br>
+                        <span class="month">-</span>
+                        <div class="info">
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-user"></i></div>
+                                <span>10 o pi&ugrave; utenti</span>
+                            </div>
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-folder"></i></div>
+                                <span>Soluzioni personalizzabili per la tua azienda</span>
+                            </div>
+                            <div class="info-2 d-flex">
+                                <div><i class="fa-solid fa-share-nodes"></i></div>
+                                <span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga
+                                    scala</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-prova">Contattaci</a>
+                        <span class="slash-hr">oppure </span><a href="#">acquista ora</a>
+                        <div>
+                            <h4>Punti salienti del piano</h4>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Cartelle offline su dispositivi mobili</span>
+                            </div>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Servizio assistenza 24/h</span>
+                            </div>
+                            <div class="info-3 d-flex">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <span>Possibilit&agrave; di personalizzazione totale</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
