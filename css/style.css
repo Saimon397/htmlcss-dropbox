@@ -224,13 +224,18 @@ h1 {
 
 /*Plan_section*/
 
+#plans-pad {
+    padding-top: 30px;
+}
+
 .table {
     width: calc((100% - 80px) / 3);
     border: 1px solid rgb(214, 214, 217);
     min-height: 1000px;
 }
 
-.fa-user {
+.fa-user,
+.fa-building {
     font-size: 19px
 }
 
@@ -267,7 +272,7 @@ h1 {
 }
 
 .month {
-    color: rgb(106, 103, 108);
+    color: rgb(162, 162, 163);
 }
 
 .info {
@@ -287,14 +292,12 @@ h1 {
     color: white;
     padding: 15px;
     width: 60%;
-    margin-top: 10px;
-    margin-bottom: 400px;
 }
 
 .slash-hr {
     display: inline-block;
     padding: 20px 5px 30px 0;
-    border-bottom: 1px solid rgb(106, 103, 108);
+    border-bottom: 1px solid rgb(208, 208, 211);
 }
 
 .col-plan h4 {
