@@ -60,6 +60,7 @@ header nav {
     background-color: white;
     border-bottom: 0.5px solid grey;
     position: fixed;
+    padding:0 10px;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -99,7 +100,7 @@ header nav ul li {
 
 h1 {
     font-size: 76px;
-    font-weight: bold;
+    font-weight: 900;
     padding-bottom: 40px;
 }
 
@@ -143,4 +144,36 @@ h1 {
     position: relative;
     font-size: 50px;
     top: 100px
+}
+
+/*Main*/
+
+#main-plans {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.radio-div {
+    height: 50px;
+    padding-right: 30px;
+}
+
+.radio-div span {
+    line-height: 50px;
+}
+
+.circle {
+    display: inline-block;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#checked {
+    border: 6px solid rgb(0, 97, 255);
+}
+#non-checked {
+    border: 3px solid rgb(203, 203, 206);
 }
