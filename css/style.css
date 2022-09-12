@@ -12,15 +12,6 @@ body {
     min-width: 1320px;
 }
 
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
 .w-30 {
     width: 30%;
     flex-flow: column wrap;
@@ -46,11 +37,15 @@ a {
 }
 
 ul {
-    list-style: none;
+    list-style: none
 }
 
 .d-flex {
     display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 /* header */
@@ -59,7 +54,7 @@ header nav {
     height: 70px;
     width: 100%;
     background-color: white;
-    border-bottom: 0.5px solid grey;
+    border-bottom: 0.5px solid rgb(211, 219, 226);
     position: fixed;
     padding: 0 15px;
     top: 0;
@@ -85,6 +80,11 @@ header nav img {
 
 header nav ul li {
     padding-left: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
 }
 
 /*Jumbo*/
@@ -117,7 +117,7 @@ h1 {
     background-color: rgb(0, 97, 255);
     color: white;
     padding: 15px;
-    width: 60%;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -132,6 +132,7 @@ h1 {
 
 .w-30 a {
     position: relative;
+    text-decoration: none;
     top: 50px;
     left: 0;
     font-size: 15px;
@@ -235,6 +236,7 @@ h1 {
 }
 
 .fa-user,
+.fa-users,
 .fa-building {
     font-size: 19px
 }
@@ -242,12 +244,13 @@ h1 {
 .table p {
     font-size: 20px;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 1px;
+    margin-bottom: 20px;
 }
 
 .user-type {
     text-align: center;
-    padding: 10px 0;
+    padding: 1px 0;
     border-bottom: 1px solid rgb(214, 214, 217);
 }
 
@@ -267,7 +270,7 @@ h1 {
 
 .price {
     display: inline-block;
-    font-weight: 900;
+    font-weight: bold;
     padding: 10px 0;
 }
 
@@ -287,11 +290,22 @@ h1 {
     padding-bottom: 18px;
 }
 
-.btn-prova {
+.btn-2 {
     background-color: rgb(0, 97, 255);
     color: white;
-    padding: 15px;
-    width: 60%;
+    padding: 15px 28px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-2c {
+    background-color: rgb(0, 97, 255);
+    color: white;
+    padding: 15px 90px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
 }
 
 .slash-hr {
@@ -317,4 +331,128 @@ h1 {
 
 .table-center {
     margin: 0 40px;
+}
+
+#table-foot {
+    min-height: 500px;
+    border: 1px solid rgb(214, 214, 217);
+    margin-top: 30px;
+}
+
+#table-foot .table-foot-container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+#table-foot p {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 1px;
+    margin-bottom: 20px;
+}
+
+.tfc-left {
+    flex-basis: 70%;
+}
+
+.paragraph2 {
+    padding-top: 40px;
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 1px;
+    margin-bottom: 20px;
+}
+
+.tfc-left h3 {
+    font-size: 30px;
+}
+
+.paragraph {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.tfc-right {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.btn-3 {
+    background-color: rgb(0, 97, 255);
+    color: white;
+    padding: 15px 15px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.blue {
+    color: rgb(19, 19, 239);
+}
+
+/*Partner_section*/
+
+.left-part {
+    flex-basis: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-part img {
+    width: 100%;
+}
+
+.right-part {
+    flex-basis: 40%;
+    padding-top: 35px;
+}
+
+.right-part h3 {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.right-part p {
+    padding-top: 12px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-4 {
+    border: 1px solid black;
+    color: black;
+    padding: 15px 10px;
+    width: 55%;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Dropbox_business*/
+
+.card {
+    flex-basis: calc(100% / 3);
+    min-height: 500px;
+    padding-right: 55px;
+    padding-top: 15px;
+}
+.card-img {
+    height: 50%;
+}
+.card-img img {
+    width: 100%;
+}
+.card-info {
+    height: 50%;
+    line-height: 1.5;
+}
+.card-info h3 {
+    padding-bottom: 20px;
 }
