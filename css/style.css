@@ -21,9 +21,14 @@ a {
     color: black;
 }
 
-.container-jumbo {
-    width: 80%;
-    margin: 0 auto;
+.w-30 {
+    width: 30%;
+    line-height:  1.3;
+    position: relative;
+}
+
+.w-70 {
+    width: 70%;
 }
 
 .container {
@@ -31,7 +36,7 @@ a {
     margin: 0 auto;
 }
 
-.smallercontainer {
+.small-container {
     max-width: 1000px;
     margin: 150px auto;
 }
@@ -72,17 +77,67 @@ header nav img {
 }
 
 .btn-inizia {
-    background-color: #0161ff;
+    background-color: rgb(0, 97, 255);
     padding: 8px 18px;
     color: white;
 }
 
 header nav ul li {
     padding-left: 30px;
-    padding-top: 25px;
 }
-
-
 
 /*Jumbo*/
 
+#jumbotron {
+    background-color: rgb(180, 208, 231);
+    padding-top: 80px;
+}
+
+#jumbotron .container {
+    position: relative;
+    bottom: -80px;
+}
+
+h1 {
+    font-size: 76px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+#jumbotron img {
+    width: 100%;
+}
+
+.btn-jumbo {
+    background-color: rgb(0, 97, 255);
+    color: white;
+    padding: 15px;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.w-30 {
+    flex-flow: column wrap;
+    position: relative;
+}
+
+.w-30 p {
+    padding-top: 35px;
+    line-height: 23px;
+}
+
+/*.w-30 a {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+}*/
+
+.w-30 i {
+    position: absolute;
+    font-size: 50px;
+    bottom: 100px
+}
