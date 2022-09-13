@@ -556,10 +556,14 @@ h1 {
 
 .small-box img {
     filter: invert(100%);
+    width: 50%;
 }
 
 .box-center {
     background-color: rgb(245, 245, 245);
+    overflow-y: auto;
+    height: 30vw;
+    width: calc(100% - 60vw);
 }
 
 .des {
@@ -696,10 +700,25 @@ footer {
     background-color: black;
     color: white;
     justify-content: space-between;
+    width: 100%;
 }
 
 .list {
     display: flex;
+    flex-basis: calc(100% / 5);
+    line-height: 1.2;
+}
+
+.list h4 {
+    font-size: 25px;
+}
+
+.list a {
+    font-size: 14px;
+}
+
+.list a:hover {
+    text-decoration: underline;
 }
 
 .list ul {
@@ -721,21 +740,16 @@ ul a {
     color: white;
 }
 
-.footer-line {
-    width: 80%;
-    padding-bottom: 30px;
-    border-bottom: 1px solid white;
+hr {
+    width: 10%;
+    border-bottom: 2px solid white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: inline-block;
+    position: relative;
 }
 
-.language {
-    color: lightgray;
-    padding-bottom: 40px;
-}
-
-.language i {
-    vertical-align: middle;
-}
-
-.bottom-list ul li a {
-    font-size: 12px;
+.fa-earth-americas {
+    margin-right: 10px;
+    font-size: 20px;
 }
