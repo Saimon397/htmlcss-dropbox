@@ -464,3 +464,8 @@ h1 {
 .card-info h3 {
     padding-bottom: 20px;
 }
+
+.space2 h2 {
+    width: 60%;
+    margin-top: 60px;
+}
