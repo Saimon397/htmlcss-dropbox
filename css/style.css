@@ -575,7 +575,7 @@ h1 {
 .last-color .small-container {
     display: flex;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -610,21 +610,95 @@ h1 {
     font-size: 30px;
 }
 
-.question-box {
-    border-top: 1px solid rgb(162, 162, 162);
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.questions .small-container:last-child {
+.question .small-container:last-child {
     border-bottom: 1px solid rgb(162, 162, 162);
 }
 
 .question-hr i {
-    padding-right: 25px;
+    padding-right: 30px;
+    padding-top: 20px;
 }
 
 .question-text {
     font-weight: bold;
+}
+
+.question-box {
+    border-top: 1px solid rgb(162, 162, 162);
+    position: relative;
+    min-height: 30px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.question-text h4 {
+    margin: 10px;
+}
+
+.question-box i {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+.question-box:hover i {
+    rotate: 180deg;
+    padding-left: 30px;
+}
+
+.question-box .hidden {
+    display: none;
+}
+
+.question-box:hover .hidden {
+    display: block;
+}
+
+/*Footer_section*/
+
+footer {
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+}
+
+.list ul {
+    padding-top: 80px;
+    padding-right: 115px;
+    padding-bottom: 40px;
+}
+
+.list li {
+    padding-bottom: 15px;
+}
+
+ul h4 {
+    padding-bottom: 15px;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-line {
+    width: 8%;
+    padding-bottom: 30px;
+}
+
+.language {
+    color: lightgray;
+    padding-bottom: 40px;
+}
+
+.language i {
+    vertical-align: middle;
+}
+
+.bottom-list ul li a {
+    font-size: 12px;
 }
