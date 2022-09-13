@@ -74,8 +74,9 @@ header nav img {
 
 .btn-inizia {
     background-color: rgb(0, 97, 255);
-    padding: 8px 18px;
+    padding: 10px 20px;
     color: white;
+    margin-left: 20px;
 }
 
 .btn-inizia:hover {
@@ -91,10 +92,69 @@ header nav a {
     color: black;
 }
 
-.hov:hover {
-    background-color: rgb(242, 238, 232);
-    padding: 15px 5px;
-    border-radius: 10%;
+/*Dropdown*/
+
+ul#menu li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+ul#menu li a {
+    float: left;
+    padding: 10px 10px;
+    color: black;
+    text-decoration: none;
+
+}
+
+ul#menu li:hover {
+    background: rgb(232, 225, 215);
+    color: black;
+}
+
+ul#menu li a:hover {
+    background: rgb(232, 225, 215);
+    color: black;
+}
+
+ul#menu ul {
+    margin: 2px 0 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 9999;
+    background: rgb(179, 174, 167);
+}
+
+ul#menu li:hover ul {
+    background: rgb(232, 225, 215);
+    opacity: 1;
+    visibility: visible;
+}
+
+ul#menu ul li {
+    display: block;
+    border: 0;
+}
+
+ul#menu ul a {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    text-transform: none;
+}
+
+ul#menu ul a:hover {
+    background-color: rgb(179, 174, 167);
+    color: black;
 }
 
 /*Jumbo*/
