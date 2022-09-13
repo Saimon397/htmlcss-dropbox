@@ -91,7 +91,7 @@ header nav a {
 
 #jumbotron {
     background-color: rgb(180, 208, 231);
-    margin-top: 30px;
+    padding-top: 80px;
 }
 
 #jumbotron .container {
@@ -102,7 +102,7 @@ header nav a {
 h1 {
     font-size: 76px;
     font-weight: 900;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .d-flex {
@@ -136,6 +136,10 @@ h1 {
     top: 50px;
     left: 0;
     font-size: 15px;
+}
+
+.black {
+    color: black;
 }
 
 .w-30 i {
@@ -334,7 +338,7 @@ h1 {
 }
 
 #table-foot {
-    min-height: 500px;
+    min-height: 100px;
     border: 1px solid rgb(214, 214, 217);
     margin-top: 30px;
 }
@@ -443,16 +447,20 @@ h1 {
     padding-right: 55px;
     padding-top: 15px;
 }
-.card-img {
+
+.card-image {
     height: 50%;
 }
-.card-img img {
+
+.card-image img {
     width: 100%;
 }
+
 .card-info {
     height: 50%;
     line-height: 1.5;
 }
+
 .card-info h3 {
     padding-bottom: 20px;
 }
