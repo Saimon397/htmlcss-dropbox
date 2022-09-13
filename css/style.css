@@ -737,6 +737,7 @@ h1 {
     position: absolute;
     top: 2px;
     right: 10px;
+    transition: 0.8s;
 }
 
 .question-box:hover i {
@@ -752,6 +753,9 @@ h1 {
 .question-box:hover .hidden {
     display: block;
     font-size: 15px;
+    margin-top: 20px;
+    width: 80%;
+    transition: 0.8s;
 }
 
 /*Footer_section*/
@@ -812,4 +816,24 @@ hr {
 .fa-earth-americas {
     margin-right: 10px;
     font-size: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.icon a {
+    color: white;
+}
+
+.fa-twitter {
+    margin-left: -20px;
+}
+
+.fa-facebook,
+.fa-youtube {
+    margin-left: 20px;
 }
