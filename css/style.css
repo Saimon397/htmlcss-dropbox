@@ -929,13 +929,13 @@ hr {
     padding-bottom: 13px;
 }
 
-.head-form p {
-    margin-right: 110px;
-  
-}
+.head-form p:first-child {
+    margin-right: 210px;
+    margin-left: -55px;
+  }
 
 .head-form .mspace {
-    margin-right: 5px;
+    margin-right: 7px;
 }
 
 .form-mid {
@@ -1004,7 +1004,7 @@ hr {
     margin-left: 240px;
 }
 
-label {
+#colore {
     font-size: 20px;
     padding-top: 15px;
     padding-bottom: 12px;
@@ -1030,9 +1030,72 @@ input {
     margin-bottom: 20px;
 }
 
-.line-opp {
+/*.line-opp {
     display: inline-block;
+    position: relative;
     padding: 20px 0px 20px 0;
     border-bottom: 1px solid rgb(208, 208, 211);
     width: 30%;
+    margin-bottom: 5px;
+    text-align: center;
+    overflow: hidden;
+}*/
+
+.line-opp::before .line-opp::after {
+    content: '';
+    position: relative;
+    width: 50%;
+    background-color: rgba(0,0,0,0.2);
+    display: inline-block;
+    height: 1px;
+    vertical-align: middle;
+}
+
+.small-container2 {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+#footer2 {
+    background-color: white;
+    color: rgb(118, 118, 118);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list2 {
+    display: flex;
+    flex-basis: calc(100% / 5);
+    line-height: 1.2;
+}
+
+.list2 h4 {
+    font-size: 25px;
+}
+
+.list2 a {
+    font-size: 14px;
+}
+
+.list2 a:hover {
+    text-decoration: underline;
+}
+
+.list2 ul {
+    padding-top: 80px;
+    padding-right: 115px;
+    padding-bottom: 40px;
+}
+
+.list2 li {
+    padding-bottom: 15px;
+}
+
+.list2 ul h4 {
+    padding-bottom: 15px;
+}
+
+.list2 ul a {
+    text-decoration: none;
+    color: rgb(118, 118, 118);
 }
