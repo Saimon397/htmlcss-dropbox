@@ -842,15 +842,13 @@ hr {
 
 .header2 {
     height: 70px;
-    width: 90%;
+    width: 100%;
     background-color: white;
     border-bottom: 2px solid rgb(211, 219, 226);
     position: fixed;
-    padding: 0 15px;
+    padding: 0;
     top: 0;
-    left: 0;
-    z-index: 9999;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .header2 .d-flex {
@@ -858,7 +856,9 @@ hr {
 }
 
 .header2 img {
-    width: 200px;
+    width: 180px;
+    margin-left: 220px;
+    margin-right: 220px;
 }
 
 .btn-log {
@@ -866,9 +866,14 @@ hr {
     border: 1.5px solid rgb(0, 97, 255);
     font-weight: bold;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: rgb(0, 97, 255);
-    margin-left: 20px;
+    margin-left: -180px;
+}
+
+.btn-log:hover {
+    color: rgb(3, 75, 192);
+    border: 1.5px solid rgb(3, 75, 192);
 }
 
 .app {
@@ -932,7 +937,7 @@ hr {
 .head-form p:first-child {
     margin-right: 210px;
     margin-left: -55px;
-  }
+}
 
 .head-form .mspace {
     margin-right: 7px;
@@ -982,10 +987,11 @@ hr {
     background-color: rgb(235, 235, 235);
 }
 
-.fa-google, .fa-apple {
-  font-size: 25px;
-  margin-right: 120px;
-  margin-left: -130px;
+.fa-google,
+.fa-apple {
+    font-size: 25px;
+    margin-right: 120px;
+    margin-left: -130px;
 
 }
 
@@ -1004,6 +1010,10 @@ hr {
     margin-left: 240px;
 }
 
+#btn-6:hover {
+    background-color: rgb(11, 134, 234);
+}
+
 #colore {
     font-size: 20px;
     padding-top: 15px;
@@ -1012,7 +1022,7 @@ hr {
     font-weight: bold;
 }
 
-input {
+.mail-pass input {
     margin-bottom: 20px;
 }
 
@@ -1030,30 +1040,27 @@ input {
     margin-bottom: 20px;
 }
 
-/*.line-opp {
+.form-mid hr {
+    width: 90%;
+    border-bottom: 1px solid rgb(167, 169, 172);
+    margin-bottom: 40px;
+    margin-top: 40px;
     display: inline-block;
     position: relative;
-    padding: 20px 0px 20px 0;
-    border-bottom: 1px solid rgb(208, 208, 211);
-    width: 30%;
-    margin-bottom: 5px;
-    text-align: center;
-    overflow: hidden;
-}*/
-
-.line-opp::before .line-opp::after {
-    content: '';
-    position: relative;
-    width: 50%;
-    background-color: rgba(0,0,0,0.2);
-    display: inline-block;
-    height: 1px;
-    vertical-align: middle;
 }
 
 .small-container2 {
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 0 auto;
+}
+
+.small-container2 hr {
+    width: 90%;
+    border-bottom: 1px solid rgb(167, 169, 172);
+    margin-bottom: 20px;
+    margin-top: 0;
+    display: inline-block;
+    position: relative;
 }
 
 #footer2 {
@@ -1065,16 +1072,15 @@ input {
 
 .list2 {
     display: flex;
-    flex-basis: calc(100% / 5);
-    line-height: 1.2;
+    flex-basis: calc(100% / 4);
 }
 
 .list2 h4 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .list2 a {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .list2 a:hover {
@@ -1082,20 +1088,24 @@ input {
 }
 
 .list2 ul {
-    padding-top: 80px;
-    padding-right: 115px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 5px;
 }
 
 .list2 li {
-    padding-bottom: 15px;
+    padding-bottom: 2px;
 }
 
 .list2 ul h4 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .list2 ul a {
     text-decoration: none;
     color: rgb(118, 118, 118);
+}
+
+.space-s {
+    margin-top: 25px;
 }
