@@ -889,7 +889,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
 }
 
 .box-log {
@@ -902,6 +902,7 @@ hr {
     flex-wrap: wrap;
     align-items: center;
     padding: 0 30px;
+    margin-top: 20px;
 }
 
 .main-form {
