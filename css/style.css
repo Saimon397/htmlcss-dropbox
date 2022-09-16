@@ -1053,6 +1053,7 @@ hr {
 .small-container2 {
     max-width: 1200px;
     margin: 0 auto;
+    margin-left: 120px;
 }
 
 .small-container2 hr {
